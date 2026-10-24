@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Happy Birthday Sayang!!💙</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="floating" aria-hidden="true">💙 ✨ 🎂 ⭐ 💌 🫧</div>
+    <main class="app">
+      <section id="loginScreen" class="panel login">
+        <div class="eyebrow">A LITTLE BIRTHDAY ADVENTURE</div>
+        <div class="big-icon">🔐</div>
+        <h1>Private Birthday Buat Lumi Sayang!!💌</h1>
+        <p class="muted">
+          Masukin password yang benar ya sayang buat buka semua kejutan dari
+          aku😝.
+        </p>
+        <form id="loginForm">
+          <label for="password">Password</label>
+          <div class="password-row">
+            <input
+              id="password"
+              type="password"
+              autocomplete="current-password"
+              placeholder="Masukkan password..."
+              required
+            />
+            <button type="button" id="togglePassword" class="ghost small">
+              Lihat
+            </button>
+          </div>
+          <button class="primary full" type="submit">Buka Kejutan ✨</button>
+          <p id="loginMessage" class="message" aria-live="polite"></p>
+        </form>
+        <p class="tiny">
+          Petunjuk password: tanyakan ke pembuat website yaitu pacarmu💌
+        </p>
+      </section>
+
+      <section id="gameScreen" class="hidden">
+        <header class="topbar">
+          <div>
+            <span class="eyebrow">BIRTHDAY QUEST</span>
+            <h1>Hai, Happy Birthday Sayang! 💙</h1>
+          </div>
+          <button id="logoutBtn" class="ghost small">Kunci lagi 🔒</button>
+        </header>
+        <div class="progress-wrap panel">
+          <div class="progress-label">
+            <span>Progres kejutan buat kamu!</span
+            ><strong id="progressText">0 / 8 selesai</strong>
+          </div>
+          <div class="progress-track"><div id="progressBar"></div></div>
+        </div>
+        <section class="panel welcome">
+          <h2>Siap main dan membuka hadiah sayang?</h2>
+          <p class="muted">
+            Selesaikan mini-game ini satu per satu ya sayang. Setiap kemenangan
+            membuka satu kejutan kecil. Semoga harimu seindah langit biru! 🫶
+          </p>
+        </section>
+        <nav id="gameNav" class="game-grid" aria-label="Daftar mini-game"></nav>
+        <section id="gameArea" class="panel game-area">
+          <div class="empty-state">
+            <div class="big-icon">🎁</div>
+            <h2>Pilih mini-game</h2>
+            <p class="muted">
+              Pilih kartu di atas untuk memulai petualanganmu sayang!.
+            </p>
+          </div>
+        </section>
+        <section id="surpriseBox" class="panel surprise-box">
+          <h2>🎉 Kotak kejutan</h2>
+          <p id="surpriseText" class="muted">
+            Selesaikan game untuk membuka pesan spesial.
+          </p>
+        </section>
+      </section>
+    </main>
+    <footer>Made with 💙, mida pacar lumi ♡.</footer>
+    <script src="script.js"></script>
+  </body>
+</html>
